@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple_200"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_expressao"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:gravity="end"
+        android:textSize="40sp"
+        android:ellipsize="start"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/text_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:gravity="end"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.8"
+        android:background="@color/teal_200">
+        <TextView
+            android:id="@+id/limpar"
+            style="@style/operadores_botao"
+            android:text="C"
+            android:height="10dp"
+            android:background="@color/blue" />
+        <TextView
+            android:id="@+id/divisao"
+            style="@style/operadores_botao"
+            android:width="5dp"
+            android:text="/"
+            android:background="@color/blue" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/teal_200"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/numero_sete"
+            style="@style/numero_botao"
+            android:text="7"
+            android:background="@color/white" />
+        <TextView
+            android:id="@+id/numero_oito"
+            style="@style/numero_botao"
+            android:text="8"
+            android:background="@color/white" />
+        <TextView
+            android:id="@+id/numero_nove"
+            style="@style/numero_botao"
+            android:text="9"
+            android:background="@color/white" />
+        <TextView
+            android:id="@+id/multiplicacao"
+            style="@style/operadores_botao"
+            android:text="X"
+            android:background="@color/blue" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/teal_200"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/numero_quatro"
+            style="@style/numero_botao"
+            android:text="4"
+            android:background="@color/white" />
+        <TextView
+            android:id="@+id/numero_cinco"
+            style="@style/numero_botao"
+            android:text="5"
+            android:background="@color/white" />
+        <TextView
+            android:id="@+id/numero_seis"
+            style="@style/numero_botao"
+            android:text="6"
+            android:background="@color/white" />
+        <TextView
+            android:id="@+id/subtracao"
+            style="@style/operadores_botao"
+            android:text="-"
+            android:background="@color/blue" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/teal_200"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/numero_um"
+            style="@style/numero_botao"
+            android:text="1"
+            android:background="@color/white" />
+        <TextView
+            android:id="@+id/numero_dois"
+            style="@style/numero_botao"
+            android:text="2"
+            android:background="@color/white" />
+        <TextView
+            android:id="@+id/numero_tres"
+            style="@style/numero_botao"
+            android:text="3"
+            android:background="@color/white" />
+        <TextView
+            android:id="@+id/soma"
+            style="@style/operadores_botao"
+            android:text="+"
+            android:background="@color/blue" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/teal_200"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/ponto"
+            style="@style/numero_botao"
+            android:text="."
+            android:background="@color/white" />
+        <TextView
+            android:id="@+id/numero_zero"
+            style="@style/numero_botao"
+            android:text="0"
+            android:background="@color/white" />
+        <ImageView
+            android:id="@+id/backspace"
+            style="@style/numero_botao"
+            android:text="back"
+            android:background="@color/white"
+            android:src="@drawable/backspace"
+            android:scaleType="center"
+
+            />
+        <TextView
+            android:id="@+id/igual"
+            style="@style/operadores_botao"
+            android:text="="
+            android:background="@color/blue" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
